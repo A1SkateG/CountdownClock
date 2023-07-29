@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1516353231735-20b3e660227c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2664&q=80");
+    background-size: cover;
+}
+
+.DD214{
+    offset-path: path("M20,20 C20,100 800,0 900,250");
+    animation: move 893238000s infinite alternate ease-in-out;
+    width: 40px;
+    height: 40px;
+  }
+  
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
+      opacity: 0;
+    }
+    10% {
+        offset-distance: 10%;
+        opacity: .1;
+    }
+    20% {
+        offset-distance: 20%;
+        opacity: .2;
+    }
+    30% {
+        offset-distance: 30%;
+        opacity: .3;
+    }
+    40% {
+        offset-distance: 40%;
+        opacity: .4;
+    }
+    50% {
+        offset-distance: 50%;
+        opacity: .5;
+    }
+    60% {
+        offset-distance: 60%;
+        opacity: .6;
+    }
+    70% {
+        offset-distance: 70%;
+        opacity: .7;
+    }
+    80% {
+        offset-distance: 80%;
+        opacity: .8;
+    }
+    90% {
+        offset-distance: 90%;
+        opacity: .9;
+    }
+    100% {
+      offset-distance: 100%;
+      opacity: 1;
+    }
+  }
+  
+
+.content{
+    margin-left: 20px;
+    top: 40%;
+    position: absolute;
+    transform: translate(-50%)
+    color: black;
+}
+
+.content h1{
+    margin-top: -8%;
+    font-size: 61px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: red;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid red;
+    outline: none;
+    padding: 12px 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.countdown-clock{
+    display: flex;
+    
+}
+
+.countdown-clock div{
+    flex-basis: 100px;
+    margin: 8px;
+}
+
+.countdown-clock div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.DaysLabel, .HoursLabel, .MinutesLabel, .SecondsLabel{
+    text-align: center;
+}
+
+
+
+
+
+
